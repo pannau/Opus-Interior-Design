@@ -1,0 +1,1498 @@
+/*---------------------------------------------------------------------
+            OPUS INTERIOR DESIGN FICTIONAL WEBSITE CSS STYLE FILE
+---------------------------------------------------------------------*/
+
+/*---------------------------------------------------------------------
+                        WEBSITE COLOUR SCHEME AND FONTS
+---------------------------------------------------------------------*/
+
+/* GOOGLE FONTS -
+font-family: 'Nunito', sans-serif;
+#444 - Font Color */
+
+/* COLORS - 
+#250303; - Dark brown(Icon color)
+#70503B; - Brown
+#8E6750; - Light brown
+#D8CABF; - Beige
+#6D6E70; - Gray
+lightgray; */
+
+
+/*---------------------------------------------------------------------
+                        MOBILE DEFAULT STYLES - GLOBAL STYLES
+---------------------------------------------------------------------*/
+
+/* Prevents adjustments of font size after orientation change in IE on Windows phone and in IOS */
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+/* Apply a natural box model layout to all elements */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* clearfix: Force an element not to collapse */
+.clearfix: after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*------------------------------------------------------------*/
+
+/* Grid layout*/
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"]{
+    width: 100%;
+    float: left;
+    padding: 15px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+} 
+
+/*-------------------------------------------------------------*/
+
+/* All images and video set to 100% width of their parent container */
+img, video {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: -4px;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    color:/* #250303; */ #8E6750;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #70503B; /*#250303;*/
+}
+
+h1 {
+    font-size: 2em;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    font-weight: lighter;
+    color: /*#d8cabf;*/ /*#250303;*/ #70503B;
+}
+
+h3 {
+    color: /*rgba(255, 255, 255, 0.9);*/ /*#250303;*/
+    font-size: 1.2em;
+    font-family: 'Nunito', sans-serif;
+    font-weight: lighter;
+}
+
+p {
+    /*padding: 0 10px;*/
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    font-size: 120%;
+    line-height: 150%;
+    color:#250303;
+    padding: 3%;
+    text-indent: 2%;
+}
+
+/*-------------------------------------------------------------*/
+
+.container {
+    width: 100;
+    height: 100%;
+    margin: 100px auto;
+    background-color: whitesmoke;
+    padding-bottom: 10%;
+}
+
+.holdingC {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 20px 10px;
+    overflow: auto;
+}
+
+/*------------------------------------------------------------*/
+
+/*#about {
+    background-color: #D8CABF; #250303;
+    padding-bottom: 30%; 
+}*/
+
+/*#projects {
+    background-color: #D8CABF; #250303;
+    padding-bottom: 30%;
+    margin-bottom: 0%;
+}*/
+
+/*#services {
+    background-color: #D8CABF; #250303;
+    padding-bottom: 20%;
+    margin-bottom: 0%;
+}*/
+
+/*#contact {
+    background-color: #D8CABF; #250303;
+    padding-bottom: 20%;
+}*/
+
+
+
+/*---------------------------------------------------------------------
+                        THE HOME STYLES
+---------------------------------------------------------------------*/
+
+/*.homeBgImage {
+    background-image: url(../img/background/livingroom.jpg); 
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;*/
+    /*position: relative;*/
+    /*height: auto;*/
+    /*border-bottom: 15px solid rgba(53, 38, 80, 0.8);*/
+    /*background-attachment: fixed;*/
+/*}*/
+
+/* Background Image and logo */
+#home {
+    /*background-image: url(../img/background/livingroom.jpg);*/
+    height:100vh;
+    /*background-size: cover;
+    background-position: center;*/
+}
+
+.carousel-fade .carousel-inner .item {
+        opacity: 0;
+        transition-property: opacity;
+        }
+    .carousel-fade .carousel-inner .active {
+        opacity: 1;
+        }
+    .carousel-fade .carousel-inner .active.left,
+    .carousel-fade .carousel-inner .active.right {
+        left: 0;
+        opacity: 0;
+        z-index: 1;
+        }
+    .carousel-fade .carousel-inner .next.left,
+    .carousel-fade .carousel-inner .prev.right {
+        opacity: 1;
+        }
+    .carousel-fade .carousel-control {
+        z-index: 2;
+        }
+    .item:nth-child(1) {
+        background: url(../img/background/livingroom.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        }
+    .item:nth-child(2) {
+        background: url(../img/living-dining/studio.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        }
+    .item:nth-child(3) {
+        background: url(../img/livingroom/img8.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        }
+
+    .carousel {
+        z-index: -99;
+        }
+
+    .carousel .item {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        }
+
+/*------------------------------------------------------------*/
+/* SCROLL TO TOP BUTTON */
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #250303; /*#8E6750;*/
+    color: white;
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    opacity: 0.8;
+}
+
+#myBtn:hover {
+    background-color: /*#250303; */ #8e6750;
+} 
+
+.fa-up {
+    color: #D8CABF;;
+}
+
+
+/*------------------------------------------------------------*/
+/* COMPANY LOGO */
+.logo img {
+    display: block; 
+    margin: auto;  
+    opacity: 0.8;
+    width: 60%;
+    z-index: 100;
+    margin-top: 50%;
+}
+
+/*
+.logo {
+    margin-top: 160px;
+    max-width: 100%;
+}
+*/
+/*------------------------------------------------------------*/
+
+/* NAVIGATION SECTION */
+
+.mainMenu {
+    display: flex;
+    justify-content: center;
+    padding-top: 13px;
+}
+
+.navC {
+    color: white;
+    height: auto;
+    width: 100%;
+    background-color: /*lightgray;*/ transparent;
+    position: fixed;
+    /*border-bottom: 2px solid rgba(194, 166, 255, 0.2);*/
+    z-index: 100;
+}
+
+ul.menu-items {
+    padding-left: 0;
+    margin: 0;
+}
+
+nav li a, nav li {
+    color: white;
+    opacity: 1;
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    float: none;
+    display: block;
+    outline-style: none !important;
+    text-decoration: none;
+}
+
+.navBtn  {
+    font-size: 1.2em;
+    display: block;
+    width: 30%;
+    margin: 0 4vw 0 65vw; /*73vw;*/
+    padding: 2px 2%;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 1%;
+    background-color: /*transparent;*/ /*#8E6750;*/ #250303; 
+    opacity: 0.8;
+    color: /* #250303;*/ white; /*#D8CABF;*/
+    border: 1px solid /*#250303;*/ /*white;*/ #D8CABF;
+}
+
+.arrow {
+    color:/* #250303;*/ /*white; */ #D8CABF;
+    font-size: 1.5em;
+}
+    /*.navBtn  {
+        font-size: 2.5em;
+        display: block;
+        width: 20%;
+        margin: 0 4vw 0 75vw;
+        padding: 7px 3%;
+        text-align: center;
+        cursor: pointer;
+        margin-top: 1%;
+        background-color: transparent; 
+        opacity: 0.7;
+        color: #8E6750; 
+    }*/
+    
+.menu-items a {
+    padding: 15px 5vw 15px 0;
+    color: white; /*#8E6750;*/ /*lightgray;*/
+    text-align: right;
+}
+    
+.menu-items li {
+    border-top: 1px solid /*lightgray;*/ #D8CABF;
+    background: /*gray;*/ /*#8E6750;*/ #250303;
+    opacity: 0.8;
+}
+
+.menu-items { 
+    display: none; 
+}
+
+/*---------------------------------------------------------------------
+                    ABOUT PAGE STYLES
+---------------------------------------------------------------------*/
+
+#about {
+    padding-bottom: 30%;
+    padding-top: 5%;
+    /*margin-bottom: -30%;*/
+}
+
+
+
+/*.section2 {
+    background-color: lightgray;
+}*/
+
+.woman {
+    padding: 5%;
+    width: 100%;
+    border: 1px solid lightgray;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: whitesmoke;
+}
+
+.text {
+    padding: 2%;
+    display: inline-block;
+    border: 1px solid lightgray;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: whitesmoke;
+}
+
+.aboutPic {
+    width: 90%;
+    margin-left: 5%;
+}
+
+.about-text1 {
+    width: 90%;
+    margin-left: 5%;
+    opacity: 0.9;
+}
+
+.about-text2 {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 3%;
+    border: 1px solid lightgray;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: whitesmoke;
+    opacity: 0.9;
+}
+
+
+/*---------------------------------------------------------------------
+                SERVICES PAGE STYLES
+---------------------------------------------------------------------*/
+
+#service {
+    padding-bottom: 30%;
+    padding-top: 5%;
+    /*margin-bottom: -30%;*/
+}
+
+/*.section2 {
+    background-color: lightgray;
+}*/
+
+.serviceText {
+    width: 90%;
+    margin-left: 5%;
+    padding: 3%;
+    border: 1px solid lightgray;
+    background-color: whitesmoke;
+    opacity: 0.8;
+}
+
+.serviceText2 {
+    width: 90%;
+    margin-left: 5%;
+    padding: 3%;
+    border: 1px solid lightgray;
+    background-color: whitesmoke;
+    opacity: 0.8;
+}
+
+.serviceText3 {
+    margin-top: 4%;
+}
+
+.serviceImg3 {
+    margin-top: -2%;
+    padding: 5%;
+    }
+
+.serviceImg4 {
+    margin-top: 8%;
+}
+
+.btn {
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    font-size: 100%;
+}
+
+.btn2 {
+     width: 60%;
+    }
+
+
+/*---------------------------------------------------------------------
+            PROJECT PAGE STYLES
+---------------------------------------------------------------------*/
+
+#projects {
+    padding-bottom: 30%;
+    /*padding-top: 5%;*/
+    /*margin-bottom: -30%;*/
+}
+
+/*.section3 {
+    background-color: lightgray;
+}*/
+
+#wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.pro-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    width: auto;
+    /*margin-bottom: -4px;*/
+    margin-top: 4%;
+    /*margin-left: 3%;*/
+}
+
+.pro-image:hover {
+    border: 1px solid #250303;
+}
+
+.one-third {
+    width: 20%;
+    float: left;
+    margin: 2.5%;
+}
+
+@media screen and (min-width: 1280px) {
+    .one-third{
+        width: 32%;
+        margin: 8px;
+    }
+}
+
+@media screen and (min-width: 1023px) {
+    
+    .one-third{
+        width: 30%;
+        margin: 15px;
+    }
+}
+
+@media screen and (max-width: 812px) {
+    .one-third{
+        width: 48%;
+        margin: 1%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .one-third{
+        width: 48%;
+        margin: 1%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .one-third{
+        width: 98%;
+        margin: 1%;
+    }
+}
+
+
+
+/*---------------------------------------------------------------------
+            CONTACT FORM AND FOOTER STYLES
+---------------------------------------------------------------------*/
+
+#contact {
+    /*margin-top: -20%;*/
+    padding-bottom: 20%;
+}
+
+/*.section4 {
+    background-color: lightgray;
+}*/
+
+.mandy {
+    width: 90%;
+    margin-left: 5%;
+}
+
+.containerFlex {
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+}
+
+.contactT {
+    color: /*rgba(255, 255, 255, 0.9);*/ /*#d8cabf;*/ #70503B;
+    text-align: center;
+}
+
+.contactD {
+    /*color: white;*/
+    text-align: center;
+    /*width: 100%;*/
+    margin-top: 20px;
+    opacity: 0.9;
+    /*line-height: 0.5%;*/
+}
+
+.ourAddress {  
+    font-size: 1.4em;
+    line-height: 2em;
+    text-align: center;
+    color: /*rgba(255, 255, 255, 0.9);*/ #250303;
+}
+
+.iconsContact {
+    font-size: 1em;
+    margin: 1%;
+    color: /*rgba(195, 168, 255, 0.8);*/ #250303;
+    /*transition: all 0.5s ease;*/
+}
+
+/* Here is to demonstrate the flexbox order property*/
+.contactD {
+    display: flex;
+    flex-direction: column;
+}
+
+.telMob {
+    order: -1;
+    margin-bottom: 7%;
+}
+
+.contactD a {
+    text-decoration: none;
+    font-size: 1.5em;
+    color: /*white;*/ #250303;
+    /*background-color: rgba(55, 42, 71, 1);*/
+    padding: 0 20px;
+    border-radius: 5px;
+    background-color: whitesmoke;
+}
+
+.formContainer {
+    width: 100%; 
+    /*float: left;*/
+    /*border: 5px solid rgba(55, 42, 71, 0.5);*/
+    height: auto; 
+    margin-top: 25px;
+}
+
+/*.formC {
+    color: gray;
+    width: 100%;
+    margin: 0 auto 100px auto;
+    display: block;
+}*/
+
+/*.userPass {
+    display: block;
+    margin: 0 auto 10px auto;
+}*/
+
+.inputFields {
+    border: none;
+    border-radius: 3px;
+    border: 1px solid lightgray;
+    width: 98%;
+    outline: none;
+    margin: /*10px 0 20px 0;*/ 0 0 20px 0;
+    height: 40px;
+    color: /*white;*/ #250303;
+    font-size: 1.2em;
+    font-weight: lighter;
+    padding: 0 5%;
+}
+
+.inputMessage {
+    border: none;
+    border-radius: 3px;
+    border: 1px solid rgba(142, 102, 62, 0.52);/*lightgray;*/
+    width: 98%;
+    outline: none;
+    margin: 10px 0 20px 0;
+    height: auto;
+    color: #250303;
+    font-size: 1.1em;
+    font-weight: lighter;
+    padding: 20px 5%;
+}
+
+.sendB {
+    font-size: 1em;
+    color: white;
+    line-height: 30px;
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    background-color: #8E6750;/*rgba(142, 102, 62, 0.52);*/
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    width: 98%;
+    height: 40px;
+}
+
+.sendB:hover {
+    background-color: #250303;
+    color: white;
+}
+
+.office {
+    margin-top: 5%
+}
+
+.formSec1 {
+    margin-left: 7%;
+    width: 85%;
+    /*padding-top: 9%;*/
+    }
+
+address {
+    font-size: 80%;
+    
+    }
+
+.formSec {
+    padding: 3px;
+    width: 85%;
+    margin-left: 8%;
+    background-color: whitesmoke;
+    border: 1px solid lightgrey;
+}
+
+.serviceText2 {
+    margin-top: 5%;
+    }
+
+.containerFlex {
+    margin-top: 15%;
+    }
+
+/* GEOLOCATION */
+#map {
+    width: 100%;
+    /*opacity: 0.5; */ 
+    height: 450px; 
+}
+
+/* FOOTER ---------------------------------------------------------*/
+
+/* Font awesome icons */
+.fa-linkedin {
+    color: #250303; /*#d8cabf;*/}
+
+.fa-linkedin:hover {
+    color: #d8cabf;
+}
+
+.fa-twitter {
+    color: #250303; /*#d8cabf;*/}
+
+.fa-twitter:hover {
+    color: #d8cabf;
+}
+
+.fa-facebook {
+    color: #250303; /*#d8cabf;*/}
+
+.fa-facebook:hover {
+    color: #d8cabf;
+}
+
+.fa-instagram {
+    color: #250303; /*#d8cabf;*/}
+
+.fa-instagram:hover {
+    color: #d8cabf;
+}
+
+.fa-pinterest {
+    color: #250303; /*#d8cabf;*/}
+
+.fa-pinterest:hover {
+    color: #d8cabf;
+}
+
+.smLogo {
+    font-size: 2em;
+    margin: 2% 3% 0 3%;
+    /*color: #250303;*/
+}
+
+.socialMedia { 
+    /* Flexbox code for alignment demonstration*/
+    display: flex;
+    justify-content: center;
+    padding-top: 5%;
+}
+
+.footerD {
+    font-size: 0.8em;
+    color: #250303; /*#d8cabf;*/
+    text-align: center;
+    font-weight: lighter;
+    padding: 20px 0 20px 0;
+    display: block;
+}
+
+footer {  
+    background-color: /*whitesmoke;*/ /*#250303;*/ whitesmoke;
+    clear: both;
+    margin: 0 auto;
+}
+
+i {
+    color: #250303;
+}
+
+.colapse {
+    cursor: pointer;
+}
+
+.float-form-btn {
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    /*padding: 8px;*/
+    z-index: 15;
+    font-size: 16px;
+    transform: rotate(-90deg);
+    position: fixed;
+    left: -50px;
+    bottom: 60px;
+    backface-visibility: hidden;
+    background-color: #250303; 
+    color: /*white;*/ #D8CABF;
+    opacity: 0.95;
+}
+
+/*---------------------------------------------------------------------
+                 MOBILE STYLES - 568 SCREEN RESOLUTION
+---------------------------------------------------------------------*/
+
+
+@media screen and (min-width: 568px) {
+    
+    .logo img {
+    display: block; 
+    margin: auto;  
+    opacity: 0.8;
+    width: 40%;
+    z-index: 100;
+    margin-top: 30%;
+    }
+	
+    .float-form-btn {
+        height: 6%;
+        width: 25%;
+    }
+    
+    #myBtn {
+    bottom: 20px;
+    right: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    opacity: 0.8;
+    }
+    
+    .fa-up {
+        font-size: 2em;
+    }
+}
+
+/*---------------------------------------------------------------------
+                 MOBILE STYLES - 667 SCREEN RESOLUTION
+---------------------------------------------------------------------*/
+
+
+@media screen and (min-width: 667px) {
+    
+/*.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}*/
+ 
+    .logo img {
+    width: 30%;
+    margin-top: 12%;
+    margin-left: 35%;
+    }
+    
+    /* Menu list */
+    /*nav li a, nav li {
+        width: 96%;
+    }*/
+    
+    /*Arrow up button */
+    /*#myBtn {
+        right: 85px;
+    }*/
+
+    .navBtn  {
+        font-size: 1.2em;
+        display: block;
+        width: 17%;
+        margin: 0 4vw 0 78vw; /*73vw;*/
+        padding: 2px 2%;
+        margin-top: 2%;
+    }
+
+    .menu-items a {
+        padding: 15px 5vw 15px 0;
+    }
+
+    .serviceImg1 {
+        width: 46%;
+    }
+    
+    .serviceImg4 {
+        width: 50%;
+        margin-top: 0;
+        margin-left: 3%;
+    }
+}
+
+
+/*---------------------------------------------------------------------
+                 TABLET STYLES - 768 SCREEN RESOLUTION
+---------------------------------------------------------------------*/
+
+
+@media screen and (min-width: 768px) {
+    
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+    
+    #about {
+        padding-bottom: 10%;
+        padding-top: 5%;
+    }
+    
+    .about-text1 {
+        width: 50%;
+        padding: 2%;
+        padding-bottom: 1%;
+        margin-left: 5%;
+        margin-top: 5%;
+    }
+    
+    .aboutPic {
+        width: 100%;
+        margin-top: 20%;
+        margin-left: 7%
+    }
+    
+    .about-text2 {
+        width: 95%;
+        margin-left: 3%;
+    }
+    
+    #service {
+        padding-top: 5%;
+        padding-bottom: 10%;
+    }
+    
+    .serviceImg1 {
+        width: 100%;
+        margin-left: 5%;
+        margin-top: 0%;
+    }
+    
+    .serviceImg {
+        width: 100%;
+        margin-top: 3%;
+        margin-left: 0%;
+    }
+    
+    .serviceImg3 {
+        padding: 5%;
+        margin-left: 0%;
+        margin-top: 0%;
+    }
+    
+    .serviceImg4 {
+        width: 100%;
+        margin-left: 5%;
+        margin-top: 4%;
+    }
+    
+    .serviceText {
+        margin-left: 3%;
+        width:53%;
+        padding: 2%;
+        
+    }
+    
+    .serviceText2 {
+        margin-left: 3%;
+        padding: 2%;
+        width: 55%
+    }
+    
+    .serviceText3 {
+        padding: 0;
+    }
+
+    .btn2 {
+        width: 30%
+    }  
+    
+    #projects {
+        padding-bottom: 10%;
+    }
+    
+    #contact {
+        padding-bottom: 10%;
+    }
+    
+    .mandy {
+        width: 60%;
+        margin-left: 20%;
+    }
+    
+    .contactD {
+        width: 40%;
+        padding-top: 7%;
+    }
+    
+    .formSec1 {
+        margin-left: 5%;
+        margin-top: 7%;
+    }
+
+    address {
+        margin: 0;
+    }
+    
+    .formContainer {
+        margin-left: 3%;
+        width: 47%;
+    }
+    
+    .socialMedia {
+        padding-top: 2%;
+    }
+    
+    .logo img {
+    display: block; 
+    margin: auto;  
+    opacity: 0.8;
+    width: 35%;
+    z-index: 100;
+    margin-top: 16%;
+    margin-left: 35%
+    }
+    
+    .navBtn  {
+    font-size: 1.2em;
+    display: block;
+    width: 20%;
+    margin: 0 4vw 0 75vw; /*73vw;*/
+    padding: 2px 2%;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 1%;
+    background-color: /*transparent;*/ /*#8E6750;*/ #250303; 
+    opacity: 0.8;
+    color: /* #250303;*/ /*white;*/ #D8CABF;
+    border: 2px solid /*#250303;*/ /*white;*/ #D8CABF;
+    }
+    
+    .float-form-btn {
+        height: 6%;
+        width: 20%;
+        left: -7%;
+    }
+
+    
+}
+
+/*---------------------------------------------------------------------
+                 MOBILE STYLES - 812 SCREEN RESOLUTION
+---------------------------------------------------------------------*/
+
+
+@media screen and (min-width: 812px) {
+    
+    .logo img {
+    margin-top: 8%;
+    margin-left: 36%;
+    /*width: 30%;*/
+    }
+}
+
+@media screen and (min-height: 812px) {
+    .logo img {
+    margin-top: 50%;
+    }
+}
+
+/*---------------------------------------------------------------------
+                 DESKTOP STYLES - 1024 SCREEN RESOLUTION
+---------------------------------------------------------------------*/
+
+@media screen and (min-width: 1024px) {
+    
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+    
+    .about-text1 {
+        width: 50%;
+        padding: 2%;
+        padding-bottom: 1%;
+        margin-left: 4%;
+        margin-top: 6%;
+    }
+    
+    .aboutPic {
+        width: 100%;
+        margin-top: 0%;
+        margin-left: 8%
+    }
+    
+    .about-text2 {
+        width: 95%;
+        margin-left: 3%;
+        padding-bottom: 1%;
+    }
+    
+/*------------------------------------*/
+    
+    #service {
+        padding-top: 5%;
+        padding-bottom: 10%;
+    }
+    
+    .serviceImg1 {
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 0%;
+    }
+    
+    .serviceImg {
+        width: 80%;
+        margin-top: -10%;
+        margin-left: 8%;
+    }
+    
+    .serviceImg3 {
+        width: 80%;
+        padding: 5%;
+        margin-left: 8%;
+        margin-top: 0%;
+    }
+    
+    .serviceImg4 {
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 4%;
+    }
+    
+    .serviceText {
+        margin-top: 7%;
+        margin-left: -2%;
+        width: 56%;
+        padding: 2%;
+        
+    }
+    
+    .serviceText2 {
+        margin-top: 3%;
+        margin-left: 3%;
+        padding: 2%;
+        width: 55%
+    }
+    
+    .serviceText3 {
+        padding: 0;
+        margin-top: 2%;
+    }
+
+    .btn2 {
+        width: 30%;
+    }  
+    
+    .mandy {
+        width: 50%;
+        margin-left: 26%;
+        margin-top: -2%;
+    }
+    
+    .contactD {
+        width: 40%;
+        padding-top: 5%;
+    }
+    
+    .formSec1 {
+        margin-left: 5%;
+        margin-top: 4%;
+    }
+
+    address {
+        margin: 0;
+    }
+    
+    .formContainer {
+        margin-left: 3%;
+        width: 47%;
+    }
+    
+    .socialMedia {
+        padding-top: 2%;
+    }
+    
+/*---------------------------------------------------*/
+    
+    .navBtn {
+        display: none;
+    }
+    
+    .menu-items {
+        display: inline;
+    }
+    
+    .navC {
+        background-color: transparent;
+        /*background-color: rgba(142,103,80,0.3);*/
+        border-bottom: none;
+        text-align: center;
+        padding: 10px 0;
+        padding-top: 2%;
+        font-size: 20px;
+        text-shadow: 1px 1px black;
+    }
+    
+    .nav a {
+        font-size: /*0.7em;*/ 17px;
+        letter-spacing: 1px;
+        color: /*rgba(255, 255, 255, 1);*/ white;
+        text-transform: uppercase;
+        font-weight: bold;
+        transition: all 0.5s ease;
+    }
+    
+    /*nav a:hover {
+        color: rgba(194, 166, 255, 1)
+    }*/
+    
+    .menu-items a {
+        /*padding: 0 20px;*/
+        padding: 5px 20px;
+        margin: 0 5px;
+        text-align: center;
+        width: 10%;
+        display: inline;
+        text-decoration: none;
+        /*text-shadow: 1px 1px#250303; #70503B;*/
+    }
+    
+    .menu-items li {
+        border-top: none; 
+        display: inline;
+        background-color: transparent;
+    }
+    
+    .meni-items li.active a {
+        border: 2px solid white;
+    }
+
+    .menu-items li a:hover {
+        border: 2px solid white;
+    }
+    
+    /*.actionB {
+        position: absolute;
+        top: 75vh;
+        left: 3vw; 
+    }
+*/
+    
+    .logo img {
+    display: block; 
+    margin: auto;  
+    opacity: 0.8;
+    width: 28%;
+    z-index: 100;
+    margin-top: 25%;
+    margin-left: 36%
+    }
+    
+    #myBtn {
+    bottom: 30px;
+    right: 40px;
+    padding: 15px;
+    border-radius: 10px;
+    opacity: 0.8;
+    }
+    
+    .fa-up {
+        font-size: 2em;
+    }
+}
+
+
+/*---------------------------------------------------------------------
+                 DESKTOP STYLES - 1280 SCREEN RESOLUTION
+---------------------------------------------------------------------*/
+
+
+@media screen and (min-width: 1280px) {
+    
+   /* a[href$=“.com”] {
+	  color: blue;
+}
+    
+    a[href^=“tel”] {
+	  color: blue;
+}*/
+    
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+    
+    .about-text1 {
+        width: 55%;
+        padding: 2%;
+        padding-bottom: 1%;
+        margin-left: -4%;
+        margin-top: 4%;
+    }
+    
+    .aboutPic {
+        width: 70%;
+        margin-top: 0%;
+        margin-left: 15%
+    }
+    
+    .about-text2 {
+        width: 95%;
+        margin-left: 3%;
+        padding-bottom: 1%;
+    }
+    
+/*------------------------------------*/
+    
+    #service {
+        padding-top: 5%;
+        padding-bottom: 10%;
+    }
+    
+    .serviceImg1 {
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 0%;
+    }
+    
+    .serviceImg {
+        width: 80%;
+        margin-top: -30%;
+        margin-left: 8%;
+    }
+    
+    .serviceImg3 {
+        width: 80%;
+        padding: 5%;
+        margin-left: 8%;
+        margin-top: 0%;
+    }
+    
+    .serviceImg4 {
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 4%;
+    }
+    
+    .serviceText {
+        margin-top: 7%;
+        margin-left: -2%;
+        width: 56%;
+        padding: 2%;
+        
+    }
+    
+    .serviceText2 {
+        margin-top: 3%;
+        margin-left: 3%;
+        padding: 2%;
+        width: 55%
+    }
+    
+    .serviceText3 {
+        padding: 0;
+        margin-top: 2%;
+    }
+
+    .btn2 {
+        width: 30%;
+    }  
+    
+    .mandy {
+        display: none;
+    }
+    
+    .contactD {
+        width: 30%;
+        padding-top: 5%;
+    }
+    
+    .formSec1 {
+        margin-left: 5%;
+        margin-top: 1.5%;
+    }
+
+    address {
+        margin: 0;
+    }
+    
+    .formContainer {
+        margin-left: 3%;
+        margin-top: 0;
+        width: 56%;
+    }
+    
+    .socialMedia {
+        padding-top: 2%;
+    }
+    
+    #about {
+        padding-top: 0;
+        padding-bottom: 5%;
+    }
+    
+    #service {
+        padding-top: 0;
+        padding-bottom: 5%;
+    }
+    
+    #projects {
+        padding-top: 0;
+        padding-bottom: 5%;
+    }
+    
+    #contact {
+        padding-bottom: 5%;
+    }
+    
+    #myBtn {
+    bottom: 30px;
+    right: 40px;
+    padding: 20px;
+    border-radius: 10px;
+    opacity: 0.8;
+    }
+    
+    .fa-up {
+        font-size: 2em;
+    }
+    
+    .logo img {
+        width: 23%;
+        margin-top: 12%;
+        margin-left: 38%;
+    }
+}
+
+
+
+
+
